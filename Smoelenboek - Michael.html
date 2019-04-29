@@ -6,16 +6,19 @@
 
         <body>
                 <div class = "main">
-                                <div class = "page">
+                                <div class = "page" title = "Mouse over foto!!">
                                                 <h1>Welkom bij het smoel van Michael Schmidt Crans</h1>
                                                 <div id = "dropdown">
-                                                <img src="michael.jpg" alt="Foto van Michael" style="width: 250px; height:250px;">
+                                                <img src="michael.jpg" alt="Foto van Michael" style="width: auto; height:100%;">
                                                         <div class = "dropdown-content">  
                                                         <p>Naam: Michael Schmidt Crans <br>
                                                          Leeftijd: 45 jaar <br>
-                                                        Woonplaats: Leeuwarden<br>                                            
+                                                        Woonplaats: Leeuwarden<br>   
+                                                        Ervaring: Junior-junior<br> 
+                                                        Laatste werkgever: PUUR!-Sanitair<br>
+                                                        Ambitie: Vanuit de WW naar de IT..                                        
                                                          </p> 
-                                                        </div>   
+                                                         </div>
                                                 </div>        
                                 </div>
                 </div>
@@ -37,20 +40,22 @@
         }
                 
       .page {
-              width: 100%;
-              padding: 50px;
-              text-align: center;
-              background-color: white;
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+        background-color: white;
            
       }
 
+    
+
       .dropdown {
-              position: relative;
-              display: inline-block;
+        position: relative;
+        display: inline-block;
       }
 
       .page h1 {
-              font-size: 50px;
+        font-size: 50px;
       }
 
       .dropdown-content {
@@ -58,15 +63,22 @@
         position: absolute;
         background-color: black;
         color: white;
-        min-width: 250px;
-        min-height: 250px;
+        line-height: 1.6;
+        width: 0px;
+        height: 200px;
         padding: 5px;
         z-index: 1;
         text-align-last: left;
-        transition: all 1s;
+        -webkit-transition: width 1s;
+        transition: width 1s;
       }
 
       .page:hover .dropdown-content {
         display: inline-block;
+        width: 300px;
       }
+
+    
+     
+
 </style>

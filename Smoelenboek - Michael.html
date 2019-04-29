@@ -6,7 +6,7 @@
 
         <body>
                 <div class = "main">
-                                <div class = "page">
+                                <div class = "page" title = "Mouse over foto!!">
                                                 <h1>Welkom bij het smoel van Michael Schmidt Crans</h1>
                                                 <div id = "dropdown">
                                                 <img src="michael.jpg" alt="Foto van Michael" style="width: auto; height:100%;">
@@ -15,9 +15,10 @@
                                                          Leeftijd: 45 jaar <br>
                                                         Woonplaats: Leeuwarden<br>   
                                                         Ervaring: Junior-junior<br> 
+                                                        Laatste werkgever: PUUR!-Sanitair<br>
                                                         Ambitie: Vanuit de WW naar de IT..                                        
                                                          </p> 
-                                                        </div>   
+                                                         </div>
                                                 </div>        
                                 </div>
                 </div>
@@ -46,6 +47,8 @@
            
       }
 
+    
+
       .dropdown {
         position: relative;
         display: inline-block;
@@ -60,20 +63,22 @@
         position: absolute;
         background-color: black;
         color: white;
+        line-height: 1.6;
         width: 0px;
-        height: 0px;
+        height: 200px;
         padding: 5px;
         z-index: 1;
         text-align-last: left;
+        -webkit-transition: width 1s;
         transition: width 1s;
       }
 
       .page:hover .dropdown-content {
         display: inline-block;
-        height: 200px;
         width: 300px;
       }
 
+    
      
 
 </style>

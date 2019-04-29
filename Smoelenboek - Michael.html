@@ -19,9 +19,9 @@
                 <div class = "main">
                                 <div class = "page" title = "Mouse over foto!!">
                                                 <h1>Welkom bij het smoel van Michael Schmidt Crans</h1>
-                                                <div id = "dropdown">
-                                                <img src="michael.jpg" alt="Foto van Michael" style="width: auto; height:100%;border-radius: 15px;">
-                                                        <div class = "dropdown-content">  
+                                                <div class = "dropdown">
+                                                <img src="michael.jpg" class = "foto" alt="Foto van Michael" style="width: auto; height:100%;border-radius: 15px;">
+                                                        <div class = "dropdowncontent">  
                                                         <p>Naam: Michael Schmidt Crans <br>
                                                          Leeftijd: 45 jaar <br>
                                                         Woonplaats: Leeuwarden<br>   
@@ -40,6 +40,7 @@
 * {
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
+        overflow: hidden;
 }
 
 header {
@@ -58,6 +59,7 @@ header {
         background-color: beige;
         width: 100%;
         height: 100%;
+       
         }
                 
       .page {
@@ -67,17 +69,21 @@ header {
         background-color: white;
         }
 
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
+     
 
       .page h1 {
         font-size: 50px;
       }
 
-      .dropdown-content {
-        display: none;
+      .dropdown {
+              display: inline;
+              width: auto;
+              height: 100%
+      }
+
+      .dropdowncontent {
+              visibility: hidden;
+        .display:none;
         position: absolute;
         background-color: black;
         color: white;
@@ -85,18 +91,18 @@ header {
         margin-top: 20px;
         line-height: 1.6;
         width: 0px;
-        height: 0px;
+        height: 160px;
         padding: 5px;
         z-index: 1;
         text-align-last: left;
-        -webkit-transition: width 1s, height 1s;
-        transition: width 1s, height 1s;
+        -webkit-transition: width 1s;
+        transition: width 1s;
       }
 
-      .page:hover .dropdown-content {
+      .dropdown:hover .dropdowncontent {
         display: inline-block;
+        visibility: visible;
         width: 300px;
-        height: 160px;
       }
 
     

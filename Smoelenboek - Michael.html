@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Smoelenboek CodeGorilla - Michael</title>
+
+
+        <body>
+                <div class = "main">
+                                <div class = "page">
+                                                <h1>Welkom bij het smoel van Michael Schmidt Crans</h1>
+                                                <div id = "dropdown">
+                                                <img src="michael.jpg" alt="Foto van Michael" style="width: 250px; height:250px;">
+                                                        <div class = "dropdown-content">  
+                                                        <p>Naam: Michael Schmidt Crans <br>
+                                                         Leeftijd: 45 jaar <br>
+                                                        Woonplaats: Leeuwarden<br>                                            
+                                                         </p> 
+                                                        </div>   
+                                                </div>        
+                                </div>
+                </div>
+
+        </body>
+
+<style>
+* {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+        .main {
+        margin: auto;
+        padding: 40px;
+        background-color: beige;
+        width: 100%;
+        height: 100%;
+        }
+                
+      .page {
+              width: 100%;
+              padding: 50px;
+              text-align: center;
+              background-color: white;
+           
+      }
+
+      .dropdown {
+              position: relative;
+              display: inline-block;
+      }
+
+      .page h1 {
+              font-size: 50px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        color: white;
+        min-width: 250px;
+        min-height: 250px;
+        padding: 5px;
+        z-index: 1;
+        text-align-last: left;
+        transition: all 1s;
+      }
+
+      .page:hover .dropdown-content {
+        display: inline-block;
+      }
+</style>

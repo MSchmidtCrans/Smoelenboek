@@ -20,7 +20,7 @@
                                 <div class = "page" title = "Mouse over foto!!">
                                                 <h1>Welkom bij het smoel van Michael Schmidt Crans</h1>
                                                 <div class = "dropdown">
-                                                <img src="michael.jpg" alt="Foto van Michael" style="width: auto; height:100%;border-radius: 15px;">
+                                                <img src="michael.jpg" class = "foto" alt="Foto van Michael" style="width: auto; height:100%;border-radius: 15px;">
                                                         <div class = "dropdowncontent">  
                                                         <p>Naam: Michael Schmidt Crans <br>
                                                          Leeftijd: 45 jaar <br>
@@ -59,6 +59,7 @@ header {
         background-color: beige;
         width: 100%;
         height: 100%;
+       
         }
                 
       .page {
@@ -75,12 +76,14 @@ header {
       }
 
       .dropdown {
+              display: inline;
               width: auto;
               height: 100%
       }
 
       .dropdowncontent {
-        visibility: hidden;
+              visibility: hidden;
+        .display:none;
         position: absolute;
         background-color: black;
         color: white;

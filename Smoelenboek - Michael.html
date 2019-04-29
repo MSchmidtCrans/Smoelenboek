@@ -40,7 +40,7 @@
 * {
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
-        .overflow: hidden;
+        overflow: hidden;
 }
 
 header {
@@ -68,17 +68,19 @@ header {
         background-color: white;
         }
 
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
+     
 
       .page h1 {
         font-size: 50px;
       }
 
+      .dropdown {
+              width: auto;
+              height: 100%
+      }
+
       .dropdowncontent {
-        display: none;
+        visibility: hidden;
         position: absolute;
         background-color: black;
         color: white;
@@ -94,8 +96,9 @@ header {
         transition: width 1s;
       }
 
-      .page:hover .dropdowncontent {
+      .dropdown:hover .dropdowncontent {
         display: inline-block;
+        visibility: visible;
         width: 300px;
       }
 

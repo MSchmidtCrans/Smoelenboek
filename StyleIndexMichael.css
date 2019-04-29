@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: blue;
+    padding: 50px;
+    text-align: center;
+}
+
+Header h1 {
+    font-size: 50px;
+    color: white;
+}
+
 .mainContainer {
     display: flex;
     flex-wrap: nowrap;
@@ -12,11 +23,12 @@
 
 .containerSideMenu {
     flex: 30%;
-    flex-direction: row;
     background-color: white;
+    padding: 20px;
 }
 
-.containerindexHolder {
+.containerIndexHolder {
     flex: 70%;
-    backgroundcolor: blue;
+    background-color: blue;
+    padding: 20px;
 }

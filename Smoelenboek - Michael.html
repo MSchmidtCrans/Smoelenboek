@@ -21,7 +21,7 @@
                                                 <h1>Welkom bij het smoel van Michael Schmidt Crans</h1>
                                                 <div class = "dropdown">
                                                 <img src="michael.jpg" alt="Foto van Michael" style="width: auto; height:100%;border-radius: 15px;">
-                                                        <div class = "dropdown-content">  
+                                                        <div class = "dropdowncontent">  
                                                         <p>Naam: Michael Schmidt Crans <br>
                                                          Leeftijd: 45 jaar <br>
                                                         Woonplaats: Leeuwarden<br>   
@@ -40,7 +40,7 @@
 * {
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
-        overflow: hidden;
+        .overflow: hidden;
 }
 
 header {
@@ -77,8 +77,8 @@ header {
         font-size: 50px;
       }
 
-      .dropdown-content {
-        visibility: hidden;
+      .dropdowncontent {
+        display: none;
         position: absolute;
         background-color: black;
         color: white;
@@ -94,9 +94,8 @@ header {
         transition: width 1s;
       }
 
-      .page:hover .dropdown-content {
+      .page:hover .dropdowncontent {
         display: inline-block;
-        visibility: visible;
         width: 300px;
       }
 

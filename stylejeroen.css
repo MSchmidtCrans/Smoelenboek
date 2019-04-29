@@ -60,9 +60,11 @@ header h1 {
 }
 .infovak img {
     margin: 10px;
+    -webkit-transition: transform 2s;
+     transition: transform 2s;
 }
 .infovak img:hover {
-    transform: scale(2);
+    transform: scale(1.5);
 }
 footer {
     height: 50px;

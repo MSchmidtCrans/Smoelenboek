@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: grey;
+}
+
+.containerSideMenu {
+    flex: 30%;
+    flex-direction: row;
+    background-color: white;
+}
+
+.containerindexHolder {
+    flex: 70%;
+    backgroundcolor: blue;
+}

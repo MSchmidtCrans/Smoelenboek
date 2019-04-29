@@ -17,18 +17,42 @@ Header h1 {
 
 .mainContainer {
     display: flex;
-    flex-wrap: nowrap;
     background-color: grey;
 }
 
 .containerSideMenu {
-    flex: 30%;
+    flex: 20%;
     background-color: white;
     padding: 20px;
 }
 
+.containerSideMenu ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.containerSideMenu a {
+    display: inline-block;
+    background-color: greenyellow;
+    padding: 16px 8px;
+    text-allign: center;
+    font-size: 20px;
+    width: 70%;
+    margin: 5px;
+    border-radius: 0px 25px 25px 0px;
+    color: white;
+    transition: width 1s;
+}
+
+.containerSideMenu a:hover {
+    width: 100%;
+    background-color: green;
+}
+
 .containerIndexHolder {
-    flex: 70%;
+    flex: 80%;
     background-color: blue;
     padding: 20px;
 }

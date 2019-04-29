@@ -9,8 +9,31 @@ header {
     font-weight: bold;
     text-align: center; 
 
+    header li {
+        display: inline;
+        margin: 10px;
+    }
+    header a:link, header a:visited { 
+            color: white;
+            text-decoration: none;
+    }
+    header a:hover {
+        color: blueviolet;
+        text-decoration: none;
+    }
+    #current {
+        color: blue;
+    }
+    header h1 {
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        display: inline-block;
+        padding: 5px 10px;
+    }
+
 body{
-backgroundcolor: WhiteSmoke;
+background-color: WhiteSmoke;
 font-family: 'Roboto', sans-serif;
 text-align: center;
 }

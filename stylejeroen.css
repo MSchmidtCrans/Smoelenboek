@@ -62,6 +62,7 @@ header h1 {
     margin: 10px;
     -webkit-transition: transform 2s;
      transition: transform 2s;
+     border-radius: 10px; 
 }
 .infovak img:hover {
     transform: scale(1.5);

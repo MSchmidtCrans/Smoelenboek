@@ -1,8 +1,20 @@
 
+header {
+    background-color: darkblue;
+    font-size: 2em;
+    width: 100%;
+    padding: 1em;
+    color: white; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center; 
 
-
-header, body{
+body{
 backgroundcolor: WhiteSmoke;
 font-family: 'Roboto', sans-serif;
 text-align: center;
+}
+footer{
+text-size-adjust: 75%;
+
 }

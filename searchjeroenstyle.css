@@ -30,33 +30,81 @@ footer {
     width: 100%;
     color: white;
 }
-input[type="checkbox"]:checked.malebox ~ .vrouw {
+.persoon {
+    width: 600px;
+    height: 125px;
+    margin: 40px auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: darkblue; 
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.foto {
+    width: 100px;
+    height: 100px; 
+    background-color: pink; 
+    border-radius: 50px; 
+    display: inline-block; 
+}
+.info {
+    height: 100px;
+    width: 400px; 
+    display: inline-block;  
+}
+.info h1 {
+    display: inline;
+    font-size: 1em;
+    margin: 3px;
+}
+.info p {
+    display: inline;
+}
+.malebox:checked ~ .vrouw {
     display: none;
  }
- input[type="checkbox"]:checked.femalebox ~ .man {
+ .femalebox:checked ~ .man {
     display: none;
  }
- input[type="checkbox"]:checked.groningenbox ~ .friesland {
+ .groningenbox:checked ~ .friesland {
     display: none;
  }
- input[type="checkbox"]:checked.frieslandbox ~ .groningen {
+ .frieslandbox:checked ~ .groningen {
     display: none;
  }
- input[type="checkbox"]:checked.ajbox ~ .kt {
+ .ajbox:checked ~ .kt {
     display: none;
  }
- input[type="checkbox"]:checked.ajbox ~ .uz {
+ .ajbox:checked ~ .uz {
     display: none;
  }
- input[type="checkbox"]:checked.ktbox ~ .aj {
+ .ktbox:checked ~ .aj {
     display: none;
  }
- input[type="checkbox"]:checked.ktbox ~ .uz {
+ .ktbox:checked ~ .uz {
     display: none;
  }
- input[type="checkbox"]:checked.uzbox ~ .aj {
+ .uzbox:checked ~ .aj {
     display: none;
  }
- input[type="checkbox"]:checked.uzbox ~ .kt {
+ .uzbox:checked ~ .kt {
     display: none;
  }
+ #fotoaletta {
+     background-image: url(./profielfotoA.jpeg);
+     background-size: cover;
+     background-position: center;
+ }
+ #fotojeroen {
+    background-image: url(./picsjeroen/jeroen1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#fotomichael {
+    background-image: url(./Michael.jpg);
+    background-size: cover;
+    background-position: center;
+}

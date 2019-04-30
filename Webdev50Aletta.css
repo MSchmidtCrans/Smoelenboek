@@ -28,7 +28,7 @@ header a:hover {
     text-decoration: none;
 }
 #current {
-    color: blue;
+    color: limegreen;
 }
 header h1 {
     border-style: solid;
@@ -71,7 +71,7 @@ header h1 {
     margin-top: 10px;
 }
 
-.smile {
+.glimlach    {
     width: 100px;
     height: 100px; 
     background-color: lavenderblush; 

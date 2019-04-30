@@ -4,14 +4,16 @@ $(document).ready(() => {
         $('.man').show();        
         $('#manbutton').toggleClass('buttonactive');
         $('#vrouwbutton').removeClass('buttonactive');
-        testLocation(); 
+        testLocation();
+        testAlphabet();  
     })
     $('#vrouwbutton').on('click', () => {
         $('.man').toggle();
         $('.vrouw').show();
         $('#vrouwbutton').toggleClass('buttonactive');
         $('#manbutton').removeClass('buttonactive');
-        testLocation(); 
+        testLocation();
+        testAlphabet(); 
     })
 
     $('#groningenbutton').on('click', () => {
@@ -19,14 +21,49 @@ $(document).ready(() => {
         $('.groningen').show();        
         $('#groningenbutton').toggleClass('buttonactive');
         $('#frieslandbutton').removeClass('buttonactive');
-        testSex(); 
+        testSex();
+        testAlphabet(); 
     })
     $('#frieslandbutton').on('click', () => {
         $('.groningen').toggle();
         $('.friesland').show();   
         $('#frieslandbutton').toggleClass('buttonactive');
         $('#groningenbutton').removeClass('buttonactive');
-        testSex(); 
+        testSex();
+        testAlphabet(); 
+    })
+    $('#ajbutton').on('click', () => {
+        $('.kt').toggle();
+        $('.uz').toggle();
+        $('.aj').show();   
+        $('#ajbutton').toggleClass('buttonactive');
+        $('#ktbutton').removeClass('buttonactive');
+        $('#uzbutton').removeClass('buttonactive');
+        testSex();
+        testLocation();
+        testAlphabet();
+    })
+    $('#ktbutton').on('click', () => {
+        $('.aj').toggle();
+        $('.uz').toggle();
+        $('.kt').show();   
+        $('#ktbutton').toggleClass('buttonactive');
+        $('#ajbutton').removeClass('buttonactive');
+        $('#uzbutton').removeClass('buttonactive');
+        testSex();
+        testLocation();
+        testAlphabet();
+    })
+    $('#uzbutton').on('click', () => {
+        $('.aj').toggle();
+        $('.kt').toggle();
+        $('.uz').show();   
+        $('#uzbutton').toggleClass('buttonactive');
+        $('#ktbutton').removeClass('buttonactive');
+        $('#ajbutton').removeClass('buttonactive');
+        testSex();
+        testLocation();
+        testAlphabet();
     })
 
 // function testSex start
@@ -49,7 +86,24 @@ const testLocation = function (){
         $('.groningen').hide()
     };
         }; 
-    // function testSex end
+    // function testLocation end
+
+// function testAlphabet start
+const testAlphabet = function (){
+    if ($('#ajbutton').hasClass('buttonactive')){
+        $('.kt').hide();
+        $('.uz').hide();
+    };
+    if ($('#ktbutton').hasClass('buttonactive')){
+        $('.aj').hide();
+        $('.uz').hide();
+    };
+    if ($('#uzbutton').hasClass('buttonactive')){
+        $('.aj').hide();
+        $('.kt').hide();
+    };
+        }; 
+    // function testAlphabet end
 
 
 // document ready tag

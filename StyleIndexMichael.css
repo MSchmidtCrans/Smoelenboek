@@ -26,19 +26,21 @@ Header h1 {
     padding: 20px;
 }
 
-.containerSideMenu ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
+.containerIndexHolder {
+    flex: 80%;
+    background-color: blue;
+    padding: 20px;
 }
 
-
-.containerSideMenu a {
+/*
+.containerSideMenu li {
     display: inline-block;
     background-color: greenyellow;
     padding: 16px 8px;
-    text-allign: center;
+    text-align: center;
+    text-decoration: none;
     font-size: 20px;
+    font-weight: bold;
     width: 70%;
     margin: 5px;
     border-radius: 0px 25px 25px 0px;
@@ -51,8 +53,24 @@ Header h1 {
     background-color: green;
 }
 
-.containerIndexHolder {
-    flex: 80%;
-    background-color: blue;
-    padding: 20px;
+.aTote:checked  .containerSideMenu{
+    width: 100%;
+    background-color: aqua;
+}
+*/
+
+.hidden {
+    display: none;
+}
+
+input[type="checkbox"].kToto:checked ~ .kTotoPic {
+    display: inline-block;
+}
+
+input[type="checkbox"].aTote:checked ~ .aTotePic {
+    display: inline-block;
+}
+
+input[type="checkbox"].fTotj:checked ~ .fTotjPic {
+    display: inline-block;
 }

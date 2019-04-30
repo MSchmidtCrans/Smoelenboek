@@ -50,6 +50,11 @@ button:active {
         background-color: #397bc5;
         box-shadow: 0 5px #666;
         transform: translateY(4px);
+        
+
+}
+.M:active{
+    visibility: hidden;
 }
 h3, h4 {
     text-align: center;

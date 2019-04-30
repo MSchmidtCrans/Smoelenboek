@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none; 
+}
+header {
+    background-color: darkblue;
+    font-size: 2em;
+    width: 100%;
+    padding: 1em;
+    color: white; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center; 
+}
+
+header li {
+    display: inline;
+    margin: 10px;
+}
+header a:link, header a:visited { 
+        color: white;
+        text-decoration: none;
+}
+header a:hover {
+    color: blueviolet;
+    text-decoration: none;
+}
+#current {
+    color: blue;
+}
+header h1 {
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.Inhoud {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.smile {
+    width: 100px;
+    height: 100px; 
+    background-color: lavenderblush; 
+    border-radius: 50px; 
+    display: inline-block; 
+}
+
+.informatie {
+    height: 100px;
+    width: 400px; 
+    display: inline-block;  
+}
+
+.informatie h3 {
+    display: inline;
+    font-size: 1em;
+    margin: 3px;
+}
+.informatie p {
+    display: inline;
+}
+
+.AJ:checked ~ .AchtAJ{
+    display: inline-block;
+}
+
+.PZ:checked ~ .AchtPZ{
+    display: inline-block;
+}
+
+.KO:checked ~ .AchtKO{
+    display: inline-block;
+}
+
+.M:checked ~ .Man{
+    display: inline-block;
+}
+
+.V:checked ~ .Vrouw{
+    display: inline-block;
+}
+
+.PF:checked ~ .Frl{
+    display: inline-block;
+}
+.PG:checked ~ .Grnn{
+    display: inline-block;
+}
+#Timo {
+    background-image: url(./rodekaters.jpg);
+     background-size: cover;
+     background-position: center;
+}
+#smitty {
+    background-image: url(./Michael.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#Reuz {
+    background-image: url(./picsjeroen/jeroen2.jpg);
+    background-size: cover;
+    background-position: center;
+}

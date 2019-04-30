@@ -9,16 +9,17 @@
     <header>
         <h1>SMOELENBOEK</h1> 
     </header>
-            
-            <input type="checkbox" name="sex" class="malebox"> Man
-            <input type="checkbox" name="sex" class="femalebox"> Vrouw <br>
-            <input type="checkbox" name="location" class="groningenbox"> Groningen 
-            <input type="checkbox" name="location" class="frieslandbox"> Friesland <br>
-            <input type="checkbox" name="alfabet" class="ajbox"> A tot J
-            <input type="checkbox" name="alfabet" class="ktbox"> K tot T
-            <input type="checkbox" name="alfabet" class="uzbox"> U tot Z 
-
-
+    <div class="overarch">
+        <div class="filter">
+            <p id="manbutton">Man</p>
+            <p id="vrouwbutton">Vrouw</p> <br>
+            <p id="groningenbutton">Groningen</p>
+            <p id="frieslandbutton">Friesland</p> <br>
+            A tot J <br>
+            K tot T <br>
+            U tot Z <br>
+        </div>
+        <div class="personinfo">
             <div class="persoon vrouw friesland aj">
                 <div class="content">
                     <a href="Smoelenwebsite Aletta.html"><div class="foto" id="fotoaletta"></div></a>
@@ -55,7 +56,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
     <footer>Opdracht 2: Indexpagina smoelenboek</footer>
 </div>
+    <script src="jquery.js"></script>
+    <script type="text/javascript" src="searchjeroen.js"></script>
   </body>
 </html>

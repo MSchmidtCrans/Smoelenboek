@@ -41,7 +41,7 @@ header li {
     }
 
 body {
-background-image: url("cats.jpg");
+background-image: url("./picsalet/cats.jpg");
 background-size: cover;
 font-family: 'Roboto', sans-serif;
 text-align: center;

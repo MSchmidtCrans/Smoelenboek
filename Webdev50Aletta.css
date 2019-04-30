@@ -38,6 +38,33 @@ header h1 {
     padding: 5px 10px;
 }
 
+.PIA {
+    width: 600px;
+    height: 150px;
+    margin: 40px auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: palevioletred; 
+}
+
+.PIB {
+    width: 600px;
+    height: 150px;
+    margin: 40px auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: darkgreen; 
+}
+
+.LIO {
+    width: 600px;
+    height: 150px;
+    margin: 40px auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: darkcyan; 
+}
+
 .Inhoud {
     display: flex;
     justify-content: space-around;
@@ -68,30 +95,30 @@ header h1 {
 }
 
 .AJ:checked ~ .AchtAJ{
-    display: inline-block;
+    display: none;
 }
 
 .PZ:checked ~ .AchtPZ{
-    display: inline-block;
+    display: none;
 }
 
 .KO:checked ~ .AchtKO{
-    display: inline-block;
+    display: none;
 }
 
 .M:checked ~ .Man{
-    display: inline-block;
+    display: none;
 }
 
 .V:checked ~ .Vrouw{
-    display: inline-block;
+    display: none;
 }
 
 .PF:checked ~ .Frl{
-    display: inline-block;
+    display: none;
 }
 .PG:checked ~ .Grnn{
-    display: inline-block;
+    display: none;
 }
 #Timo {
     background-image: url(./rodekaters.jpg);

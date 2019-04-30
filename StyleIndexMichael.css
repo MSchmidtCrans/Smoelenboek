@@ -63,14 +63,22 @@ Header h1 {
     display: none;
 }
 
-input[type="checkbox"].kToto:checked ~ .kTotoPic {
+.kToto:checked ~ .kTotoPic {
     display: inline-block;
 }
 
-input[type="checkbox"].aTote:checked ~ .aTotePic {
+.aTote:checked ~ .aTotePic {
     display: inline-block;
 }
 
-input[type="checkbox"].fTotj:checked ~ .fTotjPic {
+.fTotj:checked ~ .fTotjPic {
+    display: inline-block;
+}
+
+.frlKeuze:checked ~ .kTotoPic {
+    display: inline-block;
+}
+
+.groKeuze:checked ~ .aTotePic {
     display: inline-block;
 }

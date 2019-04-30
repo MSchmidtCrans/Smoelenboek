@@ -38,32 +38,7 @@ header h1 {
     padding: 5px 10px;
 }
 
+.AJ:checked ~.AJ{
+display: hidden;
+    }
 
-button {
-    border-color: cadetblue;
-    text-align: center;
-    display: inline-flex;
-}
-button:hover {background-color: #9dc1e2}
-
-button:active {
-        background-color: #397bc5;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-        
-
-}
-.M:active{
-    visibility: hidden;
-}
-h3, h4 {
-    text-align: center;
-}
-
-:valid{
-    background-color: greenyellow;
-}
-
-:invalid{
-    display: none;
-}

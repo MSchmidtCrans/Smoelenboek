@@ -1,7 +1,8 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -15,22 +16,52 @@ Header h1 {
     color: white;
 }
 
+.indexKaart {
+    display: flex;
+    background-color: #e6ffff;
+    width: 500px;
+    height: 120px;
+    border: 2px solid blue;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.foto {
+    width: 100px;
+    height: 100px; 
+    border: solid 2px blue;
+    border-radius: 15px;
+}
+
+.persInfo {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.aletta {
+    background-image: url(rodekaters.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.jeroen {
+    background-image: url(picsjeroen/jeroen1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.michael {
+    background-image: url(Michael.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*
 .mainContainer {
     display: flex;
     background-color: grey;
 }
-
-.containerSideMenu {
-    flex: 20%;
-    background-color: white;
-    padding: 20px;
-}
-
-.containerIndexHolder {
-    flex: 80%;
-    background-color: blue;
-    padding: 20px;
-}
+*/
 
 /*
 .containerSideMenu li {
@@ -53,32 +84,37 @@ Header h1 {
     background-color: green;
 }
 
-.aTote:checked  .containerSideMenu{
-    width: 100%;
-    background-color: aqua;
-}
 */
 
-.hidden {
+
+.aTotiCheck:checked ~ .jTotr {
     display: none;
 }
 
-.kToto:checked ~ .kTotoPic {
-    display: inline-block;
+.aTotiCheck:checked ~ .sTotz {
+    display: none;
 }
 
-.aTote:checked ~ .aTotePic {
-    display: inline-block;
+.jTotrCheck:checked ~ .aToti {
+    display: none;
 }
 
-.fTotj:checked ~ .fTotjPic {
-    display: inline-block;
+.jTotrCheck:checked ~ .sTotz {
+    display: none;
 }
 
-.frlKeuze:checked ~ .kTotoPic {
-    display: inline-block;
+.sTotzCheck:checked ~ .aToti {
+    display: none;
 }
 
-.groKeuze:checked ~ .aTotePic {
-    display: inline-block;
+.sTotzCheck:checked ~ .jTotr {
+    display: none;
+}
+
+.frlKeuze:checked ~ .gro {
+    display: none;
+}
+
+.groKeuze:checked ~ .frl {
+    display: none;
 }

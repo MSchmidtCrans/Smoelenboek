@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none; 
+}
+header {
+    background-color: darkblue;
+    font-size: 2em;
+    width: 100%;
+    padding: 1em;
+    color: white; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center; 
+}
+
+header li {
+    display: inline;
+    margin: 10px;
+}
+header a:link, header a:visited { 
+        color: white;
+        text-decoration: none;
+}
+header a:hover {
+    color: blueviolet;
+    text-decoration: none;
+}
+#current {
+    color: blue;
+}
+header h1 {
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.PIA {
+    width: 600px;
+    height: 150px;
+    margin: 40px auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: palevioletred; 
+}
+
+.PIB {
+    width: 600px;
+    height: 150px;
+    margin: 40px auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: darkgreen; 
+}
+
+.LIO {
+    width: 600px;
+    height: 150px;
+    margin: 40px auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: darkcyan; 
+}
+
+.Inhoud {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.smile {
+    width: 100px;
+    height: 100px; 
+    background-color: lavenderblush; 
+    border-radius: 50px; 
+    display: inline-block; 
+}
+
+.informatie {
+    height: 100px;
+    width: 400px; 
+    display: inline-block;  
+}
+
+.informatie h3 {
+    display: inline;
+    font-size: 1em;
+    margin: 3px;
+}
+.informatie p {
+    display: inline;
+}
+
+.AJ:checked ~ .AchtAJ{
+    display: none;
+}
+
+.PZ:checked ~ .AchtPZ{
+    display: none;
+}
+
+.KO:checked ~ .AchtKO{
+    display: none;
+}
+
+.M:checked ~ .Man{
+    display: none;
+}
+
+.V:checked ~ .Vrouw{
+    display: none;
+}
+
+.PF:checked ~ .Frl{
+    display: none;
+}
+.PG:checked ~ .Grnn{
+    display: none;
+}
+#Timo {
+    background-image: url(./rodekaters.jpg);
+     background-size: cover;
+     background-position: center;
+}
+#smitty {
+    background-image: url(./Michael.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#Reuz {
+    background-image: url(./picsjeroen/jeroen2.jpg);
+    background-size: cover;
+    background-position: center;
+}

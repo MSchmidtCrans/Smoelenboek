@@ -97,3 +97,6 @@ footer {
 .buttonactive {
     color: pink;
 }
+.filterbutton {
+    cursor: pointer; 
+}

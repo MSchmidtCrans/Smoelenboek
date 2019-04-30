@@ -27,7 +27,6 @@ Header h1 {
 }
 
 .foto {
-    flex: 20%;
     width: 100px;
     height: 100px; 
     border: solid 2px blue;
@@ -35,28 +34,8 @@ Header h1 {
 }
 
 .persInfo {
-    flex: 60%;
     text-align: left;
-    line-height: 1.3;
-    padding: 10px 10px 10px 0px;
-}
-
-.persLink {
-    flex: 20%;
-    margin: auto;
-    }
-
-div a {
-    text-decoration: none;
-    border: 0px solid rgba(0, 0, 0, 0);
-    border-radius: 15px;
-    transition: border 0.6s;
-}
-
-div a:hover {
-    color: black;
-    border: 1px solid black;
-    border-radius: 15px;
+    line-height: 1.6;
 }
 
 .aletta {

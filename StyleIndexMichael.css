@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: blue;
+    padding: 50px;
+    text-align: center;
+}
+
+Header h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.mainContainer {
+    display: flex;
+    background-color: grey;
+}
+
+.containerSideMenu {
+    flex: 20%;
+    background-color: white;
+    padding: 20px;
+}
+
+.containerIndexHolder {
+    flex: 80%;
+    background-color: blue;
+    padding: 20px;
+}
+
+/*
+.containerSideMenu li {
+    display: inline-block;
+    background-color: greenyellow;
+    padding: 16px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 70%;
+    margin: 5px;
+    border-radius: 0px 25px 25px 0px;
+    color: white;
+    transition: width 1s;
+}
+
+.containerSideMenu a:hover {
+    width: 100%;
+    background-color: green;
+}
+
+.aTote:checked  .containerSideMenu{
+    width: 100%;
+    background-color: aqua;
+}
+*/
+
+.hidden {
+    display: none;
+}
+
+.kToto:checked ~ .kTotoPic {
+    display: inline-block;
+}
+
+.aTote:checked ~ .aTotePic {
+    display: inline-block;
+}
+
+.fTotj:checked ~ .fTotjPic {
+    display: inline-block;
+}
+
+.frlKeuze:checked ~ .kTotoPic {
+    display: inline-block;
+}
+
+.groKeuze:checked ~ .aTotePic {
+    display: inline-block;
+}
